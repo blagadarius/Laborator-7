@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blaga Darius</title>
+<style>
+img {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+h2 {font-family: "Times New Roman", Times, serif;
+color: green ;}
+h3 {font-family: "Times New Roman", Times, serif;
+color: red; }
+h4 {
+font-family: "Lucida Console", "Courier New", monospace;
+color: white; }
+body{ background-color: blue;}
+table , td,tr,th {border-style: dotted;}
+li {border-style: solid ;}
+ul{border style: double;}
+</style>
+
+
+<script>
+
+function myFunction() {
+ document.getElementById("demo").innerHTML=" Inginer Blaga Darius";
+  document.getElementById("poza").src="darius2.jpg";
+  var tabel=document.getElementById("tabel");
+  tabel.rows[0].cells[0].innerHTML="Prieteni noi";
+  tabel.rows[0].cells[1].innerHTML="Mod de viata sanatos";
+ 
+  tabel.rows[1].cells[0].innerHTML="infruntarea unor provocari constante";
+  tabel.rows[1].cells[1].innerHTML="am devenit mai autodidact";
+ 
+  tabel.rows[2].cells[0].innerHTML="experiente noi";
+  tabel.rows[2].cells[1].innerHTML="noroc la examene";
+  
+  tabel.rows[3].cells[0].innerHTML="indeplinirea tuturor task-urilor";
+  tabel.rows[3].cells[1].innerHTML="respectarea deadline-urilor";
+ 
+  document.body.style.background="#AA0000";
+  
+  document.getElementById("demo.2").style.fontStyle="oblique";
+  document.getElementById("email").style.fontStyle="oblique";
+   document.getElementById("hobby").style.fontStyle="oblique";
+  document.getElementById("citat").style.fontStyle="oblique";
+  
+  document.getElementById("poza").style.opacity="0.7";
+  document.getElementById("poza").style.border="5px solid #555";
+  
+    var par=document.getElementsByTagName("table");
+	var i;
+    for(i=0;i<par.length;i++)
+	{
+	par[i].style.color="#6a49a1";
+	}
+	
+	var par2=document.getElementsByTagName("ul");
+	var j;
+    for(j=0;j<par.length;j++)
+	{
+	par2[j].style.color="#6a49a1";
+	}
+	
+	}
+   
+  function arVarsta()
+   {
+   var azi= new Date;
+   var varstaMea;
+   var anNasc=document.getElementById("varsta").innerHTML;
+   varstaMea=azi.getFullYear()-parseInt(anNasc);
+   document.getElementById("varsta").innerHTML=varstaMea;
+   }
+
+</script>
+
+</head>
+
+<body>	
+
+
+<img id ="poza" src="blagadarius.jpg" alt="BlagaDarius" width="500" height="333">
+
+
+
+<button type="button" onclick="myFunction()">Alta viata</button>
+
+
+<h2 id="demo">Blaga Darius</h2>
+<h3 id="email" style="color:DodgerBlue;">adresa email: darius.blaga@yahoo.com</h3>
+<p onmouseover = "arVarsta()" id="varsta">2002</p>
+
+
+<table id="tabel">
+ <tr>
+  <th>Disciplina </th>
+  <th>Fisa disciplinei</th>
+  </tr>
+  
+<tr>
+  <th> Informatica aplicata </th>
+  <th> <a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/06.pdf">Info aplicata</a></th>
+ </tr>
+ <th> Programarea calculatoarelor si limbaje de programare </th>
+ <th><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/04.pdf">Programarea calc si limbaje de progr</a>  </th>
+ </tr>
+ <tr>
+ <th> Componente si circuite electrice </th>
+ <th><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/05.pdf ">CCEP</a> </th>
+ 
+ </tr>
+ </table>
+   <h2 id="citat">Se spune ca suntem mai bine educati decat parintii nostri. De fapt, nu facem decat sa mergem la scoala o mai mare perioada de timp, ceea ce nu este acelasi lucru. (Richard Yates) <h2>
+<h4 id="hobby" >Lista cu hobby-uri: </h4>
+  <ul>
+  <li> Fitness </li>
+  <li> Trading </li>
+  <li> Mersul cu bicicleta </li>
+  </ul>
+
+
+</body>
+</html>
